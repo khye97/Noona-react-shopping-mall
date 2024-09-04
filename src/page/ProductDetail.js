@@ -7,7 +7,7 @@ function ProductDetail (){
   const [product, setProduct] = useState(null);
 
   async function getProductDetail (){
-    let url = new URL (`http://localhost:5000/products/${id}`);
+    let url = new URL (`https://my-json-server.typicode.com/khye97/Noona-react-shopping-mall/products/${id}`);
     let response = await fetch(url);
     let data = await response.json();
     console.log("디테일페이지", data);

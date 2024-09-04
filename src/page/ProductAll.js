@@ -10,7 +10,7 @@ function ProductAll (){
 
   async function getDate (){
     let searchQuery = query.get('q') || "";
-    let url = new URL(`http://localhost:5000/products?q=${searchQuery}`);
+    let url = new URL(`https://my-json-server.typicode.com/khye97/Noona-react-shopping-mall/products?q=${searchQuery}`);
     const response = await fetch(url);
     const data = await response.json();
     console.log("productAll에서 출력한 데이터", data);
